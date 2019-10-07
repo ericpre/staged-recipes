@@ -12,18 +12,13 @@ source:
 
 build:
   number: 0
-  # will skip windows & linux for the moment - until we've got OSX sorted...
-  skip: True             # [win]
-  skip: False            # [linux]
-  skip: False            # [osx]
-  features:
 
 requirements:
   build:
     # If your project compiles code (such as a C extension) then add the required compilers as separate entries here.
     # Compilers are named 'c', 'cxx' and 'fortran'.
-    - {{ compiler('c') }}                # [linux]
-    - {{ compiler('cxx') }}              # [linux]
+    - {{ compiler('c') }}                # [unix]
+    - {{ compiler('cxx') }}              # [unix]
     - {{ cdt('libxext-devel') }}         # [linux]
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
     - {{ cdt('mesa-dri-drivers') }}      # [linux]
@@ -34,21 +29,24 @@ requirements:
     - {{ cdt('libxxf86vm') }}            # [linux]
     - make                               # [linux]
     - cmake
-    - fftw >=3.3
   host:
     - python
     - pip
     - boost
-    - hdf5 >=1.10
-    - fftw >=3.3
-    - qt >=5
-    - numpy >=1.13.0
-    - matplotlib >=2.0.2
-    - h5py >=2.9.0
+    - hdf5
+    - fftw
+    - qt
+    - numpy
+    - h5py
   run:
-    - fftw >=3.3
-
-
+    - python
+    - pip
+    - boost
+    - hdf5
+    - fftw
+    - qt
+    - numpy
+    - h5py
 
 about:
   home: http://prism-em.com/
