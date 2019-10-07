@@ -49,6 +49,13 @@ requirements:
     - qt
     - h5py
 
+test:
+  imports:
+    #- pyprismatic
+  commands:
+    - prismatic
+
+
 about:
   home: http://prism-em.com/
   license: GNU

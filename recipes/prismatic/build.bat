@@ -7,6 +7,7 @@ cd build
 :: Configure using the CMakeFiles
 cmake -G "NMake Makefiles" ^
       -DPRISMATIC_ENABLE_GUI=1 ^
+      -DPRISMATIC_ENABLE_CLI=1 ^
       -DCMAKE_INSTALL_PREFIX="%PREFIX%" ^
       ..
 

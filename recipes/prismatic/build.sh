@@ -4,9 +4,10 @@
 
 mkdir build && cd build 
 
-cmake -D PRISMATIC_ENABLE_GUI=1 \
-	-D CMAKE_INSTALL_PREFIX=$PREFIX \
-	../ 
+cmake -DPRISMATIC_ENABLE_GUI=1 \
+      -DPRISMATIC_ENABLE_CLI=1 \
+      -DCMAKE_INSTALL_PREFIX=$PREFIX \
+      ../ 
 
 make
 
