@@ -12,11 +12,10 @@ source:
 
 build:
   number: 0
+  #skip: true  # [py2k]
 
 requirements:
   build:
-    # If your project compiles code (such as a C extension) then add the required compilers as separate entries here.
-    # Compilers are named 'c', 'cxx' and 'fortran'.
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ cdt('libxext-devel') }}         # [linux]
@@ -30,22 +29,24 @@ requirements:
     - make                               # [unix]
     - cmake
   host:
-    - python
-    - pip
+    #- python
+    #- pip
+    #- numpy
+    #- matplotlib
     - boost
     - hdf5
     - fftw
     - qt
-    - numpy
     - h5py
   run:
-    - python
-    - pip
+    #- python >=3.7
+    #- pip
+    #- numpy
+    #- matplotlib
     - boost
     - hdf5
     - fftw
     - qt
-    - numpy
     - h5py
 
 about:
