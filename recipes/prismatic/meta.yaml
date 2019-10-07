@@ -17,8 +17,8 @@ requirements:
   build:
     # If your project compiles code (such as a C extension) then add the required compilers as separate entries here.
     # Compilers are named 'c', 'cxx' and 'fortran'.
-    - {{ compiler('c') }}                # [unix]
-    - {{ compiler('cxx') }}              # [unix]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - {{ cdt('libxext-devel') }}         # [linux]
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
     - {{ cdt('mesa-dri-drivers') }}      # [linux]
@@ -27,7 +27,7 @@ requirements:
     - {{ cdt('libxdamage') }}            # [linux]
     - {{ cdt('libxfixes') }}             # [linux]
     - {{ cdt('libxxf86vm') }}            # [linux]
-    - make                               # [linux]
+    - make                               # [unix]
     - cmake
   host:
     - python
