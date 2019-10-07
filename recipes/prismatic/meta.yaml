@@ -53,8 +53,8 @@ test:
   imports:
     #- pyprismatic
   commands:
-    - prismatic
-
+    - prismatic --help
+    - prismatic -i SI100.XYZ
 
 about:
   home: http://prism-em.com/
