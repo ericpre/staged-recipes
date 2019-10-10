@@ -36,7 +36,7 @@ requirements:
     - boost
     - hdf5
     - fftw
-    - qt
+    - qt 5.9.*
     - h5py
   run:
     #- python >=3.7
@@ -46,7 +46,7 @@ requirements:
     - boost
     - hdf5
     - fftw
-    - qt
+    - qt 5.9.*
     - h5py
 
 test:
