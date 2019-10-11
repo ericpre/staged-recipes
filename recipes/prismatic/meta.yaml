@@ -50,10 +50,11 @@ requirements:
     - h5py
 
 test:
+  source_files:
+    - SI100.XYZ
   imports:
     #- pyprismatic
   commands:
-    - prismatic --help
     - prismatic -i SI100.XYZ
 
 about:
