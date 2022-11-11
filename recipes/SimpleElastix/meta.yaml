@@ -1,12 +1,13 @@
-{% set version = "0.10.0" %}
+{% set name = "SimpleElastix" %}
+{% set version = "1.1.0" %}
 
 package:
-  name: simpleelastix
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/kaspermarstal/SimpleElastix.git
-  git_tag: 18058e48a021d4bc79924a0c6a3826a85f5dfab9
+  url: https://github.com/SuperElastix/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 42f126b41d70ddf09cfd9f54a559c360eb78b769000be795684743efef39b7ff
 
 build:
   number: 0
