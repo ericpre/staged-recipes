@@ -17,20 +17,21 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
+    - make     # [unix]
   host:
     - python
     - cmake
-    - libtiff  4.0.*  # [not win]
-    - libpng   1.6.*  # [not win]
-    - jpeg     8*  # [not win]
-    - zlib     1.*  # [not win]
+    - libtiff  # [unix]
+    - libpng   # [unix]
+    - jpeg     # [unix]
+    - zlib     # [unix]
     - setuptools
   run:
     - python
-    - libtiff  4.0.*  # [not win]
-    - libpng   1.6.*  # [not win]
-    - jpeg     8*  # [not win]
-    - zlib     1.*  # [not win]
+    - libtiff  # [unix]
+    - libpng   # [unix]
+    - jpeg     # [unix]
+    - zlib     # [unix]
 
 test:
   imports:
