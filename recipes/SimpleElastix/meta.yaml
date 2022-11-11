@@ -14,8 +14,12 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - cmake
+  host:
     - python
-    - cmake    >=3.0  # [not win]
+    - cmake
     - libtiff  4.0.*  # [not win]
     - libpng   1.6.*  # [not win]
     - jpeg     8*  # [not win]
